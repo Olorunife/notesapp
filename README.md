@@ -84,6 +84,9 @@ Sign in to the AWS Management console in a new browser window, and open the AWS 
 Choose Create new app.
 
 Missing alt text value
+
+
+
 2. Connect to your GitHub repository
 On the Start building with Amplify page, for Deploy your app, select GitHub, and select Next.
 
@@ -96,18 +99,49 @@ Missing alt text value
 Leave the default build settings and select Next.
 
 Missing alt text value
+
+
+
 5. Deploy your application
 Review the inputs selected, and choose Save and deploy.
 
 Missing alt text value
+
+
+
 6. Verify your deployment
 AWS Amplify will now build your source code and deploy your app at https://...amplifyapp.com, and on every git push your deployment instance will update. It may take up to 5 minutes to deploy your app.
 
 Once the build completes, select the Visit deployed URL button to see your web app up and running live.
 
 Missing alt text value
+
+
+
 5. Automatically deploy code changes
 In this step, you will make some changes to the code using your text editor and push the changes to the main branch of your app.
+
+```
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 20.19.0
+        - nvm use 20.19.0
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+```
+
 
 1. Update your application code
 On your local machine, navigate to the notesapp/src/App.jsx file, and update it with the following code. Then, save the file.
