@@ -1,5 +1,14 @@
 I deployed a React application in the AWS Cloud by integrating with GitHub and using AWS Amplify. With AWS Amplify, I can continuously deploy your application in the Cloud and host it on a globally available CDN.
 
+I created a simple full-stack web application using AWS Amplify. Amplify offers a Git-based CI/CD workflow for building, deploying, and hosting single-page web applications or static sites with serverless backends.
+
+Set up the React environment
+In a new terminal window, run the following command to use Vite to create a React application:
+
+npm create vite@latest notesapp -- --template react
+cd notesapp
+npm install
+npm run dev
 
 <<<<<<< HEAD
 # React + Vite
