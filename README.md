@@ -1,3 +1,6 @@
+I deployed a React application in the AWS Cloud by integrating with GitHub and using AWS Amplify. With AWS Amplify, I can continuously deploy your application in the Cloud and host it on a globally available CDN.
+
+
 <<<<<<< HEAD
 # React + Vite
 
