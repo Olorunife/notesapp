@@ -5,10 +5,19 @@ I created a simple full-stack web application using AWS Amplify. Amplify offers 
 Set up the React environment
 In a new terminal window, run the following command to use Vite to create a React application:
 
+```
 npm create vite@latest notesapp -- --template react
 cd notesapp
 npm install
 npm run dev
+
+
+
+
+
+
+
+
 
 <<<<<<< HEAD
 # React + Vite
